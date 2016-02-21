@@ -66,7 +66,7 @@ The full starter kit requires the following major dependencies:
 
 **To install dependencies:**
 
-1)  Check your Node.js version.
+1)	Check your Node.js version.
 
 ```sh
 node --version
@@ -74,9 +74,9 @@ node --version
 
 The version should be at or above 0.12.x.
 
-2)  If you don't have Node.js installed, or you have a lower version, go to [nodejs.org](https://nodejs.org) and click on the big green Install button.
+2)	If you don't have Node.js installed, or you have a lower version, go to [nodejs.org](https://nodejs.org) and click on the big green Install button.
 
-3)  Install `gulp` and `bower` globally.
+3)	Install `gulp` and `bower` globally.
 
 ```sh
 npm install -g gulp bower
@@ -84,7 +84,7 @@ npm install -g gulp bower
 
 This lets you run `gulp` and `bower` from the command line.
 
-4)  Install the starter kit's local `npm` and `bower` dependencies.
+4)	Install the starter kit's local `npm` and `bower` dependencies.
 
 ```sh
 cd polymer-starter-kit && npm install && bower install
@@ -132,23 +132,23 @@ Polymer 1.0 introduces a shim for CSS custom properties. We take advantage of th
 3. ***shared-styles.html*** - to share styles between elements and index.html.
 4. ***element styles only*** - styles specific to element. These styles should be inside the `<style></style>` inside `template`.
 
-  ```HTML
-  <dom-module id="my-list">
-    <template>
-      <style>
-        :host {
-          display: block;
-          background-color: yellow;
-        }
-      </style>
-      <ul>
-        <template is="dom-repeat" items="{{items}}">
-          <li><span class="paper-font-body1">{{item}}</span></li>
-        </template>
-      </ul>
-    </template>
-  </dom-module>
-  ```
+	```HTML
+	<dom-module id="my-list">
+		<template>
+			<style>
+				:host {
+					display: block;
+					background-color: yellow;
+				}
+			</style>
+			<ul>
+				<template is="dom-repeat" items="{{items}}">
+					<li><span class="paper-font-body1">{{item}}</span></li>
+				</template>
+			</ul>
+		</template>
+	</dom-module>
+	```
 
 These style files are located in the [styles folder](app/styles/).
 
@@ -168,8 +168,8 @@ Components installed by Bower live in the `app/bower_components` directory. This
 
 ### Github Pages
 
-1. Uncomment this line  `// app.baseUrl = '/polymer-starter-kit/';` in app.js near the top
-2. Change `app.baseUrl = '/polymer-starter-kit/';`  to `app.baseUrl = '/your-pathname/';` (ex: if you repo is `github.com/username/bobs-awesome-site` you would change this to `bobs-awesome-site`)
+1. Uncomment this line	`// app.baseUrl = '/polymer-starter-kit/';` in app.js near the top
+2. Change `app.baseUrl = '/polymer-starter-kit/';`	to `app.baseUrl = '/your-pathname/';` (ex: if you repo is `github.com/username/bobs-awesome-site` you would change this to `bobs-awesome-site`)
 3. Run `gulp build-deploy-gh-pages` from command line
 4. To see changes wait 1-2 minutes then load Github pages for your app (ex: https://polymerelements.github.io/polymer-starter-kit/)
 
@@ -190,47 +190,47 @@ Our optional offline setup should work well for relatively simple applications. 
 To enable Service Worker support for Polymer Starter Kit project use these 3 steps:
 
 1. Uncomment Service Worker code in index.html
-  ```HTML
-  <!-- Uncomment next block to enable Service Worker support (1/2) -->
-  <!--
-  <paper-toast id="caching-complete"
-               duration="6000"
-               text="Caching complete! This app will work offline.">
-  </paper-toast>
+	```HTML
+	<!-- Uncomment next block to enable Service Worker support (1/2) -->
+	<!--
+	<paper-toast id="caching-complete"
+							 duration="6000"
+							 text="Caching complete! This app will work offline.">
+	</paper-toast>
 
-  <platinum-sw-register auto-register
-                        clients-claim
-                        skip-waiting
-                        on-service-worker-installed="displayInstalledToast">
-    <platinum-sw-cache default-cache-strategy="networkFirst"
-                       cache-config-file="cache-config.json">
-    </platinum-sw-cache>
-  </platinum-sw-register>
-  -->
-  ```
+	<platinum-sw-register auto-register
+												clients-claim
+												skip-waiting
+												on-service-worker-installed="displayInstalledToast">
+		<platinum-sw-cache default-cache-strategy="networkFirst"
+											 cache-config-file="cache-config.json">
+		</platinum-sw-cache>
+	</platinum-sw-register>
+	-->
+	```
 2. Uncomment Service Worker code in elements.html
 
-  ```HTML
-  <!-- Uncomment next block to enable Service Worker Support (2/2) -->
-  <!--
-  <link rel="import" href="../bower_components/platinum-sw/platinum-sw-cache.html">
-  <link rel="import" href="../bower_components/platinum-sw/platinum-sw-register.html">
-  -->
-  ```
+	```HTML
+	<!-- Uncomment next block to enable Service Worker Support (2/2) -->
+	<!--
+	<link rel="import" href="../bower_components/platinum-sw/platinum-sw-cache.html">
+	<link rel="import" href="../bower_components/platinum-sw/platinum-sw-register.html">
+	-->
+	```
 3. Uncomment 'cache-config' in the `runSequence()` section of the 'default' gulp task, like below:
 [(gulpfile.js)](https://github.com/PolymerElements/polymer-starter-kit/blob/master/gulpfile.js)
 
-  ```JavaScript
-  // Build Production Files, the Default Task
-  gulp.task('default', ['clean'], function (cb) {
-    runSequence(
-      ['copy', 'styles'],
-      'elements',
-      ['jshint', 'images', 'fonts', 'html'],
-      'vulcanize', 'cache-config',
-      cb);
-  });
-  ```
+	```JavaScript
+	// Build Production Files, the Default Task
+	gulp.task('default', ['clean'], function (cb) {
+		runSequence(
+			['copy', 'styles'],
+			'elements',
+			['jshint', 'images', 'fonts', 'html'],
+			'vulcanize', 'cache-config',
+			cb);
+	});
+	```
 
 #### Filing bugs in the right place
 
