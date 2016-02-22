@@ -1,0 +1,29 @@
+{
+	"name": "polytype-starter-kit",
+	"version": "0.1.0",
+	"description": "A starting point for Polymer 1.0 apps using TypeScript based on https://developers.google.com/web/tools/polymer-starter-kit/",
+	"main": "index.html",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/grebett/polymer-starter-kit.git"
+	},
+	"keywords": [
+		"TypeScript",
+		"Polymer"
+	],
+	"author": "grebett",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/grebett/polymer-starter-kit/issues"
+	},
+	"homepage": "https://github.com/grebett/polymer-starter-kit#readme",
+	"dependencies": {
+		"inversify": "^1.3.1"
+	}
+}

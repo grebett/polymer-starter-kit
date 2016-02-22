@@ -1,0 +1,29 @@
+{
+	"name": "polytype-starter-kit",
+	"homepage": "https://github.com/grebett/polymer-starter-kit",
+	"authors": [
+		"grebett <gregory.betton@gmail.com>"
+	],
+	"description": "A starting point for Polymer 1.0 apps using TypeScript based on https://developers.google.com/web/tools/polymer-starter-kit/",
+	"main": "index.html",
+	"moduleType": [],
+	"keywords": [
+		"TypeScript",
+		"Polymer"
+	],
+	"dependencies": {
+		"page": "visionmedia/page.js#~1.6.4"
+	},
+	"devDependencies": {
+		"web-component-tester": "^4.0.0"
+	},
+	"license": "MIT",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"app/bower_components",
+		"test",
+		"tests"
+	]
+}
