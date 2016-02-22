@@ -12,5 +12,5 @@ This repository is very likely to change in the near future since I am still exp
 
 This route map is not set in the stone. Some features are basically just ideas and may not be implemented ever.
 
-+ replace Oboe.js by [RxJS Observables](https://github.com/Reactive-Extensions/RxJS) <span style="background-color: orange; color: white"> 25% chances to implemented</span>
-+ add optional services (for Crypto, LocalStorage, FileAPI) <span style="background-color: green; color: white"> 75% chances to implemented</span>
++ replace Oboe.js by [RxJS Observables](https://github.com/Reactive-Extensions/RxJS) – 25% chances to be implemented
++ add optional services (for Crypto, LocalStorage, FileAPI) – 75% chances to be implemented
