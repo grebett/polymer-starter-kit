@@ -1,14 +1,14 @@
 (function(document) {
 	'use strict';
 
-	var app = document.querySelector('#app');
+	let app = document.querySelector('#app');
 
 	app.baseUrl = '/';
-	app.addEventListener('dom-change', function() {
+	app.addEventListener('dom-change', () => {
 		console.info('Our app is ready to rock!');
 	});
 
-	window.addEventListener('WebComponentsReady', function() {
+	window.addEventListener('WebComponentsReady', () => {
 		console.info('Ok, all WebComponents ready!');
 	});
 })(document);

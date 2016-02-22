@@ -2,3 +2,9 @@ node_modules
 bower_components
 .tmp
 .publish/
+npm-debug.log
+.vscode
+app/test/*.js*
+app/elements/*.js*
+app/scripts/*.js*
+gulpfile/gulpfile.js gulpfile/tsconfig.json

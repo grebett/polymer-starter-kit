@@ -1,0 +1,1 @@
+config/web-component-tester.js
