@@ -13,6 +13,8 @@
 
 	<!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
 	<script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+	<link rel="import" href="bower_components/polymer/polymer.html">
+	<link rel="import" href="bower_components/polymer-ts/polymer-ts.html">
 	<!-- endbuild -->
 
 	<!-- third-party libraries -->
@@ -30,12 +32,10 @@
 			<iron-pages attr-for-selected="data-route" selected="{{route}}">
 				<section data-route="home">
 					Welcome to home page!
-					<a href="/page">Go to lorem page!</a>
+					<a href="/card">Go to card page!</a>
 				</section>
-				<section data-route="page">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
+				<section data-route="card">
+					<my-card></my-card>
 					<a href="/">Go back to home</a>
 				</section>
 			</iron-pages>

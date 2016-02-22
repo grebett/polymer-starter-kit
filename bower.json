@@ -15,7 +15,8 @@
     "polymer": "Polymer/polymer#^1.2.0",
     "iron-pages": "PolymerElements/iron-pages#~1.0.7",
     "oboe": "~2.1.2",
-    "page": "~1.6.4"
+    "page": "~1.6.4",
+    "polymer-ts": "~0.1.22"
   },
   "devDependencies": {
     "web-component-tester": "^4.0.0"

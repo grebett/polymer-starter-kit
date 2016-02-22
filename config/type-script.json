@@ -12,6 +12,7 @@
 	"exclude": [
 		"node_modules",
 		"gulpfile",
+		"app/bower_components",
 		"app/typings",
 		"app/lib"
 	]

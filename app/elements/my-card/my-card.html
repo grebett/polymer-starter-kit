@@ -1,0 +1,52 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<dom-module id="my-card">
+	<style>
+		div {
+			height: 300px;
+			width: 300px;
+			background: peachpuff;
+			color: cornflowerblue;
+			box-shadow: 2px 2px 2px grey;
+			border-radius: 10px;
+			overflow: hidden;
+			margin-bottom: 20px;
+		}
+
+		h1 {
+			box-sizing: border-box;
+			padding: 10px;
+			width: 100%;
+			background: cornflowerblue;
+			color: peachpuff;
+		}
+
+		fieldset {
+			padding: 7px;
+			margin: 0;
+			background-color: cornflowerblue;
+			color: peachpuff;
+			border: none;
+			border-radius: inherit;
+		}
+		
+		p {
+			padding: 10px;
+		}
+	</style>
+	<template>
+		<div>
+			<form>
+				<fieldset>
+					My-Card
+				</fieldset>
+				<h1>Hi, I'm {{displayName}}</h1>
+				<hr>
+				<p>
+					<label>Change your name: </label><input value="{{name::input}}"><br>
+					<label>Add 42 to your name: </label><input type="checkbox" checked="{{_42::change}}"> {{_42}}
+				</p>
+			</form>
+		</div>
+	</template>
+	<script src="my-card.js"></script>
+</dom-module>
