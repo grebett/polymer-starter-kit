@@ -1,4 +1,5 @@
 /// <reference path="../../bower_components/polymer-ts/polymer-ts.d.ts" />
+// PolymerTS API can be found here => https://github.com/nippur72/PolymerTS
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }

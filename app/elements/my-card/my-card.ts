@@ -1,4 +1,5 @@
 /// <reference path="../../bower_components/polymer-ts/polymer-ts.d.ts" />
+// PolymerTS API can be found here => https://github.com/nippur72/PolymerTS
 
 @component('my-card')
 class MyCard extends polymer.Base {
