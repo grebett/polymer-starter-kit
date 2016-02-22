@@ -1,0 +1,109 @@
+{
+  "_args": [
+    [
+      "inversify@^1.3.1",
+      "/Users/grebett/Tools/polymer-starter-kit"
+    ]
+  ],
+  "_from": "inversify@>=1.3.1 <2.0.0",
+  "_id": "inversify@1.3.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/inversify",
+  "_nodeVersion": "4.2.1",
+  "_npmOperationalInternal": {
+    "host": "packages-6-west.internal.npmjs.com",
+    "tmp": "tmp/inversify-1.3.1.tgz_1454436323743_0.4435105847660452"
+  },
+  "_npmUser": {
+    "email": "remo.jansen@wolksoftware.com",
+    "name": "remojansen"
+  },
+  "_npmVersion": "2.14.7",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "inversify",
+    "raw": "inversify@^1.3.1",
+    "rawSpec": "^1.3.1",
+    "scope": null,
+    "spec": ">=1.3.1 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/inversify/-/inversify-1.3.1.tgz",
+  "_shasum": "90917736c874c56c9ad14c2b0cab1308df9e5dd9",
+  "_shrinkwrap": null,
+  "_spec": "inversify@^1.3.1",
+  "_where": "/Users/grebett/Tools/polymer-starter-kit",
+  "author": {
+    "name": "Remo H. Jansen"
+  },
+  "bugs": {
+    "url": "https://github.com/inversify/InversifyJS/issues"
+  },
+  "dependencies": {},
+  "description": "A lightweight IoC container written in TypeScript.",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0",
+    "gulp-coveralls": "^0.1.4",
+    "gulp-docco": "0.0.4",
+    "gulp-header": "^1.7.1",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-mocha": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-tslint": "^4.3.1",
+    "gulp-typescript": "^2.10.0",
+    "gulp-uglify": "^1.5.1",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.3.4",
+    "run-sequence": "^1.1.5",
+    "tslint": "^3.2.2",
+    "typescript": "^1.7.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dist": {
+    "shasum": "90917736c874c56c9ad14c2b0cab1308df9e5dd9",
+    "tarball": "http://registry.npmjs.org/inversify/-/inversify-1.3.1.tgz"
+  },
+  "engines": {},
+  "gitHead": "046d067c69478e371226ea773224c68e9ab95b53",
+  "homepage": "http://inversify.io",
+  "keywords": [
+    "IoC",
+    "JavaScript",
+    "TypeScript",
+    "container",
+    "control",
+    "dependency",
+    "inversion",
+    "inversion"
+  ],
+  "license": "MIT",
+  "main": "dist/inversify.js",
+  "maintainers": [
+    {
+      "name": "remojansen",
+      "email": "remo.jansen@wolksoftware.com"
+    }
+  ],
+  "name": "inversify",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inversify/InversifyJS.git"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "typings": "type_definitions/inversify-npm.d.ts",
+  "version": "1.3.1"
+}
