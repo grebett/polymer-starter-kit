@@ -2,11 +2,16 @@
 
 src: @PolymerElements
 
-## Forked Polymer Starter Kit - using TypeScript and some micro-libraries for routing, DI, AJAX, etc...
+## Forked Polymer Starter Kit - using TypeScript and some micro-libraries for services (routing, AJAX, etc.)
 
 This [Polymer](https://www.polymer-project.org/1.0/) Starter Kit has been modified for my personal use.
 
-It uses [Typescript](http://www.typescriptlang.org/) as a superset of JavaScript thanks to [PolymerTS](https://github.com/nippur72/PolymerTS), [Inversify](http://inversify.io/) for Dependency Injections, [Oboe.js](https://github.com/jimhigson/oboe.js) for AJAX queries (and streams!) and [Page.js](https://visionmedia.github.io/page.js/) for routing.
+It uses [Typescript](http://www.typescriptlang.org/) as a superset of JavaScript thanks to [PolymerTS](https://github.com/nippur72/PolymerTS). For now, micro-libraries are:
+
++ [Oboe.js](https://github.com/jimhigson/oboe.js) for AJAX queries (and streams!)
++ [Page.js](https://visionmedia.github.io/page.js/) for routing
+
+As far as possible, they are bound into reusable elements.
 
 ## Cave at
 
