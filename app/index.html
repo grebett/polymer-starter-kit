@@ -7,13 +7,9 @@
 	<base href="/">
 	<title>Scaffolded with Polytype generator</title>
 
-	<!-- build:css styles/main.css -->
+	<!-- App themes and main styles -->
+	<link rel="import" href="styles/app-theme.html">
 	<link rel="stylesheet" href="styles/main.css">
-	<!-- endbuild-->
-
-	<!-- third-party libraries -->
-		<script src="lib/inversify/dist/inversify.js"></script> 
-	<!-- end third-party -->
 
 	<!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
 	<script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
@@ -21,12 +17,18 @@
 	<link rel="import" href="bower_components/polymer-ts/polymer-ts.html">
 	<!-- endbuild -->
 
+	<!-- third-party libraries -->
+	<!-- end third-party -->
+
+	<!-- elements are gathered in one signle elements.html file -->
 	<link rel="import" href="elements/elements.html">
-	<style is="custom-style" include="shared-styles"></style>
 </head>
 
 <body unresolved>
 	<template is="dom-bind" id="app">
+		<paper-toolbar>
+			<span class="title">My app</span>
+		</paper-toolbar>
 		<h1>Hello world!</h1>
 		<div class="content">
 			<iron-pages attr-for-selected="data-route" selected="{{route}}">
